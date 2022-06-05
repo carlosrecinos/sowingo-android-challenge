@@ -2,7 +2,7 @@ package com.recinos.sowingo_android_challenge.main.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Images(
+data class Image(
     @SerializedName("image_240_wide") var image240Wide: String? = null,
     @SerializedName("image") var image: String? = null,
     @SerializedName("image_240_box") var image240Box: String? = null,

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">sowingo-android-challenge</string>
+    <string name="menu_search_text">Search Product Name, Sku, Keyword…</string>
+    <string name="main_title">Products</string>
 </resources>

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.recinos.sowingo_android_challenge"
@@ -49,4 +49,5 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.7.2'
     implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.6.21"
 }

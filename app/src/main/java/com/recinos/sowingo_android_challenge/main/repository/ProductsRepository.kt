@@ -1,36 +1,25 @@
 package com.recinos.sowingo_android_challenge.main.repository
 
-import androidx.lifecycle.MutableLiveData
 import com.recinos.sowingo_android_challenge.main.ApiResponse
-import com.recinos.sowingo_android_challenge.main.api.ApiInterface
+import com.recinos.sowingo_android_challenge.main.api.IProductsApi
 import com.recinos.sowingo_android_challenge.main.model.Product
-import com.recinos.sowingo_android_challenge.main.utils.isOnline
-import kotlinx.coroutines.GlobalScope
-import retrofit2.awaitResponse
+import com.recinos.sowingo_android_challenge.main.model.responses.FavoriteResponse
+import com.recinos.sowingo_android_challenge.main.model.responses.ProductsResponse
+import org.koin.core.component.KoinComponent
+import org.koin.core.component.inject
 
-interface IProductsRepository {
-    fun getProducts()
-}
+class ProductsRepository: BaseRepository(), KoinComponent {
+    private val api: IProductsApi by inject()
 
-class ProductsRepository(
-    val api: ApiInterface = ApiInterface.create()
-): IProductsRepository {
-    var response: MutableLiveData<ApiResponse<Product>> = MutableLiveData()
+    suspend fun getProducts(): ApiResponse<ProductsResponse> {
+        return safeApiCall { api.getProducts() }
+    }
 
-    override fun getProducts() {
-        response.value = ApiResponse.Loading()
-        val isOnline = true
-        if(isOnline) {
-            try{
-                GlobalScope.dis
-            }
-            catch(e: Exception){
-                response.value = NetworkResponse.Failure(e.message())
-            }
+    suspend fun setFavorite(product: Product): ApiResponse<FavoriteResponse> {
+        return safeApiCall { api.setFavorite(product) }
+    }
 
-        }
-        else{
-            response.value = NetworkResponse.Failure("No Internet connection")
-        }
+    suspend fun deleteFavorite(product: Product): ApiResponse<FavoriteResponse> {
+        return safeApiCall { api.deleteFavorite(product) }
     }
 }
