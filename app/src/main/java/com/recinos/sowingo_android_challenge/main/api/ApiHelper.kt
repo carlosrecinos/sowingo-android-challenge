@@ -4,6 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiHelper {
+    // This could be dynamically allocated to use different environments
     var BASE_URL = "https://demo5514996.mockable.io/"
 
     fun getInstance(): Retrofit {

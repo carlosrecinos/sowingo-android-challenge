@@ -3,7 +3,7 @@ package com.recinos.sowingo_android_challenge.main.model
 import com.google.gson.annotations.SerializedName
 
 data class Product(
-    @SerializedName("id") var id: String? = null,
+    @SerializedName("id") var id: String,
     @SerializedName("unit_name") var unitName: String? = null,
     @SerializedName("subcategory") var subcategory: Category? = Category(),
     @SerializedName("objectID") var objectID: String? = null,

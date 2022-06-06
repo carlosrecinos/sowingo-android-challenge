@@ -15,11 +15,11 @@ class ProductsRepository: BaseRepository(), KoinComponent {
         return safeApiCall { api.getProducts() }
     }
 
-    suspend fun setFavorite(product: Product): ApiResponse<FavoriteResponse> {
-        return safeApiCall { api.setFavorite(product) }
+    suspend fun setFavorite(): ApiResponse<FavoriteResponse> {
+        return safeApiCall { api.setFavorite() }
     }
 
-    suspend fun deleteFavorite(product: Product): ApiResponse<FavoriteResponse> {
-        return safeApiCall { api.deleteFavorite(product) }
+    suspend fun deleteFavorite(): ApiResponse<FavoriteResponse> {
+        return safeApiCall { api.deleteFavorite() }
     }
 }

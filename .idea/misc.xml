@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/carlo/Documents/GitHub/sowingo-android-challenge/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/carlo/Documents/GitHub/sowingo-android-challenge/app/src/main/res/drawable/ic_default_image_background.xml" value="0.2155" />
+        <entry key="..\:/Users/carlo/Documents/GitHub/sowingo-android-challenge/app/src/main/res/drawable/ic_heart.xml" value="0.2405" />
+        <entry key="..\:/Users/carlo/Documents/GitHub/sowingo-android-challenge/app/src/main/res/drawable/ic_heart_outlined.xml" value="0.1825" />
+        <entry key="..\:/Users/carlo/Documents/GitHub/sowingo-android-challenge/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/carlo/Documents/GitHub/sowingo-android-challenge/app/src/main/res/layout/card_view_product_design.xml" value="0.5" />
         <entry key="..\:/Users/carlo/Documents/GitHub/sowingo-android-challenge/app/src/main/res/menu/products_menu.xml" value="0.2647058823529412" />
       </map>
     </option>
