@@ -1,5 +1,8 @@
 Dental products test application
 ---------------------
+### High level App Architecture
+![Blank diagram](https://user-images.githubusercontent.com/26776158/172148919-329b2138-cff5-4985-a073-9b371f6951f4.png)
+
 
 ### Dependencies:
 - koin 3.2.0 (di library)
