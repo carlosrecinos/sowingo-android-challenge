@@ -1,12 +1,19 @@
 Dental products test application
 ---------------------
 
+### Dependencies:
+- koin 3.2.0 (di library)
+- retrofit 2.7.2 (Network calls)
+- kotlin-reflect 1.6.21 (kotlin reflection library)
+- glide 4.13.0 (image utils library)
+
 ### Installation
 1. Clone repository.
 2. Open project with Android Studio.
 3. Wait until dependencies are ready... 
 4. Select an device.
 5. Run.
+
 ### Features
 1. Products list with loading state.
 2. Show best seller badge when available
